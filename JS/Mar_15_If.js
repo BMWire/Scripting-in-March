@@ -15,7 +15,7 @@ else
     alert("Enda soma World History.");
 }
 
-// Nessted Ifs
+// Nested Ifs
 if (c === d)
 {
     if (x === y) 
