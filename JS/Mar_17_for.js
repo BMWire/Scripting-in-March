@@ -12,7 +12,7 @@ var cityToCheck = "Toronto";
 
 var cleanestCities = ["Nairobi", "Bujumbura", /* "Pretoria" */ "Toronto", "Connecticut", "New York"];
 
-var matchFound = "No"; //Flag
+var matchFound = "No"; //Flag. COuld very well be a Boolean value
 
 for ( i = 0; i < cleanestCities.length; i++)
 {
