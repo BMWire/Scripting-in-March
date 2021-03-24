@@ -1,6 +1,6 @@
 /*
 This contains:
-    A better way of finding strings and replacing them wit others.
+    A better way of finding strings and replacing them with others.
     string.
     indexOf
 */
