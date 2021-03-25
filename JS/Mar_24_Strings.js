@@ -6,7 +6,7 @@ var mainWord = "Lovely";
 var firstChar = mainWord.charAt(0);
 var lastChar = mainWord.charAt(length - 1);
 
-alert(mainWord + firstChar + lastChar);
+alert(mainWord + "<br>" + firstChar + "<br>" + lastChar);
 
 //Looks for an exclamation mark
 var seekWord = "I love my girl!!!";
