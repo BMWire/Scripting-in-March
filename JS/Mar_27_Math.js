@@ -12,6 +12,7 @@ alert("The average size of the African country of Kenya is:" + Math.round(sizeKe
 //Generating random numbers between 1 and 8
 var numberOfStars;
 
+
 for (let i = 1; i < 8; i++) 
 {
     var bigDecimal = Math.random();
@@ -19,3 +20,5 @@ for (let i = 1; i < 8; i++)
     var numberOfStars = Math.floor(improvedNum);    
     alert(numberOfStars);
 }
+var yourNum = prompt("How many stars do you think there are in Kenya?");
+alert(numberOfStars);
