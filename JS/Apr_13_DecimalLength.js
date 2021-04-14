@@ -14,7 +14,7 @@ var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "S
 var dayToday = dirtyDate.getDay();
 //This gives a number.
 var todayString = dayList[dayToday];
-alert(todayString);
+// alert(todayString);
 
 //Date
 var date = dirtyDate.getDate();
@@ -27,3 +27,7 @@ alert(monthString);
 var year = dirtyDate.getFullYear();
 
 var fullDate = alert("Today is" + todayString + "," + date + " " + monthString + " " + year);
+alert(fullDate);
+
+//Additional methods
+// getTime() // Finds the milliseconds that have elapsed from Epoch time 
