@@ -3,27 +3,27 @@ Here, there is manipulation of date and time
 */
 
 //Creates a Date object
-var rightNow = new Date();
+var dirtyDate = new Date();
 //Change the value of the object to a string value
-var dateString = rightNow.toString();
+var dateString = dirtyDate.toString();
 alert(dateString);
 
 //Day
-var dayList = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 //Extract the day of the week
-var weekDay = rightNow.getDay();
+var dayToday = dirtyDate.getDay();
 //This gives a number.
-var today = dayList[weekDay];
-alert(today);
+var todayString = dayList[dayToday];
+alert(todayString);
 
 //Date
-var date = rightNow.getDate();
+var date = dirtyDate.getDate();
 //Month
 var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-var monthToday = rightNow.getMonth();
-var thonth = months[monthToday];
-alert(thonth);
+var monthToday = dirtyDate.getMonth();
+var monthString = months[monthToday];
+alert(monthString);
 //Year
-var year = rightNow.getFullYear();
+var year = dirtyDate.getFullYear();
 
-var fullDate = alert("Today is" + today + "," + date + " " + thonth + " " + year);
+var fullDate = alert("Today is" + todayString + "," + date + " " + monthString + " " + year);
