@@ -1,0 +1,10 @@
+body
+{
+    display: flex;
+    align-self: center;
+}
+#thisEpisode
+{
+    color: brown;
+    size: 45px;
+}
