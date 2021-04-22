@@ -6,21 +6,18 @@ This one goes deeper into functions. Specifically, it:
 */
 
 
-function addDelivery(goodsTotal)
-{
-    var ordTotal; 
+function addDelivery(goodsTotal) {
+    var ordTotal;
     goodsTotal = prompt("What is the Grand Total of your order?");
     goodsTotal = parseInt(goodsTotal);
 
     if (goodsTotal >= 100) 
     {
         ordTotal = goodsTotal;
-    }
-    else if (goodsTotal < 50.01) 
+    } else if (goodsTotal < 50.01) 
     {
         ordTotal = goodsTotal + 5;
-    }
-    else
+    } else
     {
         ordTotal = goodsTotal + 5 + (.03 * (goodsTotal - 50));
     }
