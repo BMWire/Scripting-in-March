@@ -4,3 +4,8 @@ body
     color: lightcoral;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+a
+{
+    color: aliceblue;
+    text-decoration: none;
+}
