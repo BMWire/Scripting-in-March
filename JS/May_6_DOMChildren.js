@@ -20,4 +20,4 @@ for (let i = 0; i < div.childNodes.length; i++)
         break;   
     }
     console.log(nodeCounter);
-}
+}   
