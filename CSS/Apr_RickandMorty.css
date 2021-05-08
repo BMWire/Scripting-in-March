@@ -5,6 +5,7 @@ body
 }
 #thisEpisode
 {
-    color: brown;
+    color: rgb(221, 169, 24);
+    background-color: black;
     size: 45px;
 }
