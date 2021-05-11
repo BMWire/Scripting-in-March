@@ -36,5 +36,6 @@ else
 
 //Adding a new node to the DOM
 var lastPar = document.createElement('p');
-lastKid.appendChild(lastPar);
-lastPar.innerHTML = 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis velit id earum laboriosam rerum nihil beatae sint neque eaque. Voluptas repudiandae neque, facere ut dolor voluptates soluta odio laboriosam similique laborum sunt fugit, placeat maxime. Ullam perspiciatis debitis facere possimus!';
+var lastPText = document.createTextNode("Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere ut dolor voluptates soluta odio laboriosam similique laborum sunt fugit, placeat maxime. Ullam perspiciatis debitis facere possimus!");
+
+lastPar.appendChild(lastPText);
