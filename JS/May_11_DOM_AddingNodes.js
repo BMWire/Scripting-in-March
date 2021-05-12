@@ -16,3 +16,11 @@ cTwoPar.appendChild(cTwoText);
 
 var mainBody = document.getElementsByTagName("body");
 mainBody.setAttribute("background-color", "white");
+
+//Second trial
+var parentDiv = document.getElementById("div1");
+var newParagraph = document.createElement("p");
+var t = document.createTextNode("Hello world!");
+newParagraph.appendChild(t);
+parentDiv.appendChild(newParagraph);
+console.log(t);
