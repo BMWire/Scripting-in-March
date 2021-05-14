@@ -15,22 +15,48 @@ planOne.discountedMonths = [6, 7];
 d = new Date();
 currentMonth = d.getMonth();
 
-var months
+var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+var monthString = months[currentMonth];
+
+var monthHTML = document.getElementById("monthString");
+monthHTML.innerHTML = monthString;
 
 function priceCalc()
 {
-    for (let i = 0; i < discountedMonths.length; i++) 
+    for (let i = 0; i < planOne.discountedMonths.length; i++) 
     {
-        const setMonth = discountedMonths[i];
+        var setMonth = planOne.discountedMonths[i];
         if (setMonth === currentMonth) 
         {
-            var monthlyPrice = (planOne.price * .8);
+            var monthlyPrice = Math.round((planOne.price * .8));
+            
+            //Test to see if it works            
+            console.log(monthlyPrice);
+
+            var monthlyPriceHTML = document.getElementById("monthlyPrice");
+            var monthlyValue =  document.createTextNode(monthlyPrice);
+            monthlyPriceHTML.appendChild(monthlyValue);
         } else
         {
             monthlyPrice = planOne.price;
+
+            //Test to see if it works
+            console.log(monthlyPrice);
+            
+            var monthlyPriceHTML = document.getElementById("monthlyPrice");
+            var monthlyValue =  document.createTextNode(monthlyPrice);
+            monthlyPriceHTML.appendChild(monthlyValue);
         }
     }
     var annualPrice = monthlyPrice*12;
+    //Test to see if it works
+    console.log(annualPrice);
 
+    var annualPriceHTML = document.getElementById("annualPrice");
+    var annualValue = document.createTextNode(annualPrice);
+    
+    annualPriceHTML.appendChild(annualValue);
     return annualPrice;
 }
+
+var answer = priceCalc(); 
