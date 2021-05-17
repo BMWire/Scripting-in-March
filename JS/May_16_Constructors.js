@@ -4,13 +4,14 @@ This one is about learning constructors
 */
 
 //Plain Constructors for the plain methods
-function Plan(name, price, space, transfer, pages)
+function Plan(name, price, space, transfer, pages, discountMonths)
 {
     this.name = name;
     this.price = price;
     this.space = space;
     this.transfer = transfer;
     this.pages = pages;
+    this.discountMonths = discountMonths;
     this.calcAnnual = function(discPercent)
     {
         var monthPrice = this.price;
@@ -40,10 +41,9 @@ function Plan(name, price, space, transfer, pages)
 
             var yearPrice = monthPrice * 12;
         }
-    }
+    };
 }
 
-var planBasic = new Plan("Basic", 3.99, 100, 1000, 10);
-planBasic.discountMonths = [5, 7];
-var planProfessional = new Plan("Professional", 5.99, 500, 5000, 50);
-var planUltimate = new Plan("Ultimate", 9.99, 2000, 20000, 500);
+var planBasic = new Plan("Basic", 3.99, 100, 1000, 10, [5, 7]);
+var planProfessional = new Plan("Professional", 5.99, 500, 5000, 50, [5, 7, 11]);
+var planUltimate = new Plan("Ultimate", 9.99, 2000, 20000, 500, [5, 7]);
