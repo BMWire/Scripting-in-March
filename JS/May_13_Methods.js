@@ -71,6 +71,7 @@ var planOne = {
     space: 100,
     transfer: 1000,
     pages: 10,
+    //Start of Method
     annualCalc: function priceCalc(discPercent)
     {
         for (let i = 0; i < this.discountedMonths.length; i++) 
@@ -78,7 +79,7 @@ var planOne = {
             var setMonth = this.discountedMonths[i];
             if (setMonth === currentMonth) 
             {
-                var monthlyPrice = Math.round((this.price * discPercent));
+                var monthlyPrice = Math.round(this.price * discPercent) ;
                 
                 //Test to see if it works            
                 console.log(monthlyPrice);
