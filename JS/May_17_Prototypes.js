@@ -42,3 +42,20 @@ planBasic.discountMonths = false;
 var propertyPresent = "discountMonths" in planBasic;
 console.log(propertyPresent);
 
+//Show all the properties of an object, including the ones that were added much later after the creation of the object
+var listOfProperties = [];
+// for(var objectProperty in planBasic)
+// {
+//     listOfProperties.push(objectProperty);
+// }
+// console.log(listOfProperties);
+
+//Show only the properties of an object that were there at the start
+for(var objectProperty in planBasic)
+{
+    if (planBasic.hasOwnProperty(objectProperty)) 
+    {
+        listOfProperties.push(objectProperty);
+    }
+}
+console.log(listOfProperties);
