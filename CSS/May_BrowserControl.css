@@ -1,0 +1,15 @@
+:root
+{
+    --main-background-color: grey;
+    --main-text-color: darkorange;
+    --accent-color: lightgreen;
+}
+body
+{
+    background-color: var(--main-background-color);
+    color: var(--main-text-color);
+}
+h1, h2, h3, h4, h5, h6
+{
+    color: var(--accent-color);
+}
